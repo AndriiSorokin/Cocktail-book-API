@@ -1,0 +1,11 @@
+ul {
+  list-style: none;
+}
+
+.cocktail-item {
+  border: 1px solid black;
+}
+
+img {
+  display: block;
+}
