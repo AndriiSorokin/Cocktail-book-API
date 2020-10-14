@@ -1,28 +1,25 @@
-// Здесь файл для работы! импортим файлы другие джс
+import refs from './refs.js';
+import fetch from './fetch.js';
+import template from '../template/cocktail.hbs';
 
-import refs from './refs.js'
-import fetch from './fetch.js'
-import template from '../template/cocktail.hbs'
 import debounce from 'lodash.debounce'
 
-
-refs.input.addEventListener('input', debounce((event) => {
-  refs.list.innerHTML = ''
-  fetch.search = event.target.value
-  fetch.getFetch().then(data => {
-    console.log(data.drinks)
+refs.input.addEventListener('input', debounce((e)=>{
+  refs.list.innerHTML= ''
+  fetch.search = e.target.value
+  fetch.getFetch().then(data=>{
     renderTemplate(data.drinks)
   })
-}, 1000))
+refs.input.value = ``
+}, 500))
 
-function renderTemplate(data) {
-   const drinks = template(data)
-    refs.list.insertAdjacentHTML('beforeend', drinks)
-    const ingredients = document.querySelectorAll('.ingredients li')
-    console.log(ingredients);
-    ingredients.forEach(el => {
-      if (el.textContent === '') {
-        el.style.display = 'none'
-      }
-    })
+function renderTemplate(data){
+  const drink = template(data)
+  refs.list.insertAdjacentHTML('beforeend', drink)
+  document.querySelectorAll('.ingredients li').forEach(el=>{
+    if(el.textContent === ``) {
+      el.style.display = `none`
+    }
+  })
+
 }

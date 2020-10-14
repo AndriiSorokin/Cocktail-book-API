@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+  color: wheat;
+
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  width: 420px;
+  /* height: 100%; */
+}
+.cocktail-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.cocktail-item{
+  border: 1px solid wheat;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instruction{
+max-width: 380px;
+max-height: 300px;
+}
+.signUp{
+  display: none;
+  text-align: center;
+  border: 1px solid wheat;
+  padding: 50px 20px;
+}
+.signUp-form{
+  display: flex;
+  flex-flow: column;
+}
+input{
+  display: block;
+  margin: 0 auto;
+}
+#password-wrapper{
+  display: flex;
+  flex-flow: column;
+}
+/* #password-wrapper div{
+  display: flex;
+  flex-flow: row;
+} */
+
+#submitBtn{
+  margin-top: 50px;
+}
+
+.button-close-js {
+  display: block;
+  margin-left: auto;
+}
+
+.is-open {
+  display: block;
+}

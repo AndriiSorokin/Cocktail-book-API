@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocktail-book by Andrii Sorokin</title>
-  </head>
-  <body>
-   <form>
-     <input type="text" name="name" id="cocktail">
-   </form>
-   <ul class="cocktail-list"></ul>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration form</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <button class="nav-openModal">Sign In</button>
+    </nav>
+  </header>
+  <form>
+    <input type="text" name="" id="cocktail">
+  </form>
+
+<ul class="cocktail-list"></ul>
+
+<div class="signUp">
+  <form action="" id="signUp-form">
+   <div>
+    <label for="login">login</label>
+    <input type="text" name="login" id="login">
+   </div>
+   <div id="password-wrapper">
+    <label for="password">password</label>
+    <div>
+      <input type="password" name="password" id="password">
+      <input id="showBtn" type="button" placeholder="show" value="show">
+    </div>
+  </div>
+   <button id="submitBtn" type="submit">sign UP</button>
+  </form>
+</div>
+
+</body>
+
 </html>

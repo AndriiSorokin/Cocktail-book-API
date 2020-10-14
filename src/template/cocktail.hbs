@@ -1,8 +1,7 @@
 {{#each this}}
-
 <li class="cocktail-item">
   <h2>{{strDrink}}</h2>
-  <img src="{{strDrinkThumb}}" alt="{{strDrinkThumb}}">
+  <img src="{{strDrinkThumb}}" alt="{{strDrink}}">
   <ul class="ingredients">
     <li>{{strIngredient1}}</li>
     <li>{{strIngredient2}}</li>
@@ -16,10 +15,10 @@
     <li>{{strIngredient10}}</li>
   </ul>
   <p>Glass: {{strGlass}}</p>
-  <p>{{strAlcoholic}}</p>
+  <p>{{strAlocoholic}}</p>
   <p>Category: {{strCategory}}</p>
-  <p>Instruction: {{strInstructions}}</p>
+  <p class="instruction">Instruction: {{strInstructions}}</p>
   <p>{{strIBA}}</p>
-  <a href="https://iba-world.com/iba-cocktails/"></a>
+  <a href="https://iba-world.com/">{{strTags}}</a>
 </li>
 {{/each}}
